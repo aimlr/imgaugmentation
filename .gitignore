@@ -1,0 +1,11 @@
+#names of executables generated
+exe
+imgaugmentation*
+out
+out.exe
+
+# vendor folder
+vendor
+
+# output folder(s)
+examples/output

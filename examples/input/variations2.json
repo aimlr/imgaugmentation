@@ -1,0 +1,36 @@
+[
+	{
+        "type": "brightness",
+        "suffix": "bright-0.25",
+		"details": {
+			"amount": 0.25
+		}
+	},
+	{
+		"type": "contrast",
+		"details": {
+			"amount": -0.25
+		}
+	},
+	{
+		"type": "combine",
+		"suffix": "myCombine",
+		"details": [
+			{
+				"type": "rotate",
+				"details": {
+					"degrees": -5,
+					"pivotX": 0,
+					"pivotY": 0 
+				}
+			},
+			{
+				"type": "boxBlur",
+				"details": {
+					"amount": 3.0
+				}
+			}
+		]
+	}
+
+]

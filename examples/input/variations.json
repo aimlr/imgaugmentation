@@ -1,0 +1,187 @@
+[
+	{
+		"type": "brightness",
+		"details": {
+			"amount": 0.25
+		}
+	},
+	{
+		"type": "contrast",
+		"details": {
+			"amount": -0.25
+		}
+	},
+	{
+		"type": "gamma",
+		"details": {
+			"amount": 2.2
+		}
+	},
+	{
+		"type": "hue",
+		"details": {
+			"amount": -42
+		}
+	},
+	{
+		"type": "saturation",
+		"details": {
+			"amount": 0.5
+		}
+	},
+	{
+		"type": "boxBlur",
+		"details": {
+			"amount": 3.0
+		}
+	},
+	{
+		"type": "gaussianBlur",
+		"details": {
+			"amount": 3.0
+		}
+	},
+	{
+		"type": "dilate",
+		"details": {
+			"amount": 3.0
+		}
+	},
+	{
+		"type": "edgeDetection",
+		"details": {
+			"amount": 1.0
+		}
+	},
+	{
+		"type": "emboss"
+	},
+	{
+		"type": "erode",
+		"details": {
+			"amount": 3.0
+		}
+	},
+	{
+		"type": "grayscale"
+	},
+	{
+		"type": "invert"
+	},
+	{
+		"type": "median",
+		"details": {
+			"amount": 10.0
+		}
+	},
+	{
+		"type": "sepia"
+	},
+	{
+		"type": "sharpen"
+	},
+	{
+		"type": "sobel"
+	},
+	{
+		"type": "unsharpMask",
+		"details": {
+			"amount": 0.6,
+			"amount2": 1.2
+		}
+	},
+	{
+		"type": "threshold",
+		"details": {
+			"amount": 128
+		}
+	},
+	{
+		"type": "cropIn",
+		"details": {
+			"left": 10,
+			"top": 10,
+			"bottom": 10,
+			"right": 10
+		}
+	},
+	{
+		"type": "flipH"
+	},
+	{
+		"type": "flipV"
+	},
+	{
+		"type": "shearH",
+		"details": {
+			"amount": 30
+		}
+	},
+	{
+		"type": "shearV",
+		"details": {
+			"amount": 30
+		}
+	},
+	{
+		"type": "translate",
+		"details": {
+			"x": 30,
+			"y": 30
+		}
+	},
+	{
+		"type": "rotate",
+		"details": {
+			"degrees": 5
+		}
+	},
+	{
+		"type": "rotate",
+		"details": {
+			"degrees": -5
+		}
+	},
+	{
+		"type": "rotate",
+		"details": {
+			"degrees": -5,
+			"resizeBounds": true
+		}
+	},
+	{
+		"type": "rotate",
+		"details": {
+			"degrees": -5,
+			"pivotX": 0,
+			"pivotY": 0 
+		}
+	},
+	{
+		"type": "resize",
+		"details": {
+			"percentX": 10,
+			"percentY": 10
+		}
+	},
+	{
+		"type": "combine",
+		"suffix": "myCombine",
+		"details": [
+			{
+				"type": "rotate",
+				"details": {
+					"degrees": -5,
+					"pivotX": 0,
+					"pivotY": 0 
+				}
+			},
+			{
+				"type": "boxBlur",
+				"details": {
+					"amount": 3.0
+				}
+			}
+		]
+	}
+]

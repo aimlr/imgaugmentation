@@ -1,0 +1,124 @@
+{
+	"sourceImg": "examples/input/india-passport-first-page.png",
+	"outFolder": "examples/output",
+	"outFilePrefix": "indian-passport-first-page",
+	"fontPath": "examples/input/fonts/OCRF Regular.ttf",
+	"fontSize": 19,
+	"rgba": "0,0,0,90",
+	"texts": [
+		{
+			"contentType": "fromFile",
+			"fromFile": {
+				"filePath": "examples/input/india-last-names.txt"
+			},
+			"bounds": {
+				"left": 260, 
+				"top": 130
+			},
+			"textTransform": "capitalize",
+			"ignore": false,
+			"note": "surname field"
+		},
+		{
+			"contentType": "fromFile",
+			"fromFile": {
+				"filePath": "examples/input/india-last-names.txt"
+			},
+			"bounds": {
+				"left": 260, 
+				"top": 175
+			},
+			"textTransform": "capitalize",
+			"ignore": false,
+			"note": "given names(s) field"
+
+		},
+		{
+			"contentType": "fromRegex",
+			"fromRegex": {
+				"pattern": "[MF]"
+			},
+			"bounds": {
+				"left": 473, 
+				"top": 225
+			},
+			"ignore": false,
+			"note": "gender field"
+		},
+		{
+			"contentType": "fromRegex",
+			"fromRegex": {
+				"pattern": "^([0]?[1-9]|[1|2][0-9]|[3][0|1])[/]([0]?[1-9]|[1][0-2])[/]([12][09][0-9]{2})$"
+			},
+			"bounds": {
+				"left": 590, 
+				"top": 225
+			},
+			"ignore": false,
+			"note": "dob field"
+		},
+		{
+			"contentType": "fromFile",
+			"fromFile": {
+				"filePath": "examples/input/india-towns.txt"
+			},
+			"bounds": {
+				"left": 260, 
+				"top": 273
+			},
+			"textTransform": "capitalize",
+			"ignore": false,
+			"note": "place of birth"
+		},
+		{
+			"contentType": "fromFile",
+			"fromFile": {
+				"filePath": "examples/input/india-towns.txt"
+			},
+			"bounds": {
+				"left": 331, 
+				"top": 321
+			},
+			"textTransform": "capitalize",
+			"ignore": false,
+			"note": "place of issue"
+
+		},
+		{
+			"contentType": "fromRegex",
+			"fromRegex": {
+				"pattern": "^([0]?[1-9]|[1|2][0-9]|[3][0|1])[/]([0]?[1-9]|[1][0-2])[/]([12][09][0-9]{2})$"
+			},
+			"bounds": {
+				"left": 331, 
+				"top": 366
+			},
+			"ignore": false,
+			"note": "date of issue"
+		},
+		{
+			"contentType": "fromRegex",
+			"fromRegex": {
+				"pattern": "^([0]?[1-9]|[1|2][0-9]|[3][0|1])[/]([0]?[1-9]|[1][0-2])[/]([12][09][0-9]{2})$"
+			},
+			"bounds": {
+				"left": 538, 
+				"top": 366
+			},
+			"ignore": false,
+			"note": "date of expiry"
+		},
+		{
+			"contentType": "fixed",
+			"fixed": {
+				"content": "INDIA"
+			},
+			"bounds": {
+				"left": 260, 
+				"top": 225
+			},
+			"ignore": false,
+			"note": "nationality field"
+		}
+	]
+}
